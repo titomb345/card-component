@@ -32,7 +32,7 @@ const Card = props => {
   }
 
   return (
-    <div className={`card${isLoading ? " loading" : ""}`} onClick={onClick}>
+    <div tabIndex={1} className={`card${isLoading ? " loading" : ""}${onClick ? " has-onclick" : ""}`} onClick={onClick}>
       {!coverUnderTitle && coverPhotoElement}
 
       {showHeader && (

@@ -38,7 +38,7 @@ const CardList = () => {
             You can click on me to show an alert!
           </div>
         }
-        onClick={() => alert("This is an alert")}
+        onClick={() => alert("This is an alert!")}
       />
 
       <Card
@@ -86,8 +86,8 @@ const CardList = () => {
           </div>
         }
         footer={
-          <button onClick={() => console.log("You found me!")}>
-            Click me to log a message to the console!
+          <button onClick={() => console.log("This is a console log.")}>
+            Click me to log to the console!
           </button>
         }
       />
