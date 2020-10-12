@@ -1,0 +1,61 @@
+@keyframes loading
+  from
+    left: -100%
+  to
+    left: 100%
+
+
+.card.skeleton
+  background-color: #FAFAFA
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: -100%
+    top: 0
+    height: 100%
+    width: 150px
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%)
+    animation: loading 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite
+
+  .card__cover-photo
+    background-color: #2D2D2D0D
+
+  .card__header
+    .card__thumbnail
+      background-color: #2D2D2D0D
+
+    .card__header-content
+      .card__title
+        width: 120px
+        height: 20px
+        margin: 4px 0
+        background-color: #2D2D2D0D
+
+      .card__subtitle
+        width: 80px
+        margin: 3px 0
+        height: 14px
+        background-color: #2D2D2D0D
+
+  .card__body
+    .card__body-content
+      height: 16px
+      margin: 3px 0
+      background-color: #2D2D2D0D
+      &.one
+        width: 200px
+      &.two
+        width: 260px
+      &.three
+        width: 240px
+      &.four
+        width: 100px
+
+  .card__footer
+    .card__footer-content
+      height: 14px
+      width: 200px
+      background-color: #2D2D2D0D
+

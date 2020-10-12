@@ -1,0 +1,65 @@
+.card
+  min-height: 100px
+  overflow: hidden
+  position: relative
+  border-radius: 8px
+  border: 1px solid #2D2D2D33
+  color: #2D2D2D
+  display: flex
+  flex-direction: column
+  width: 327px
+
+  .card__footer, .card__body, .card__header
+    padding: 16px
+
+  .card__cover-photo
+    background-position: center
+    height: 200px
+
+  .card__header
+    display: flex
+
+    @media (max-width: 576px)
+      flex-direction: column
+
+    .card__thumbnail
+      border-radius: 50%
+      height: 60px
+      width: 60px
+      margin-right: 16px
+      @media (max-width: 576px)
+        margin: auto
+        margin-bottom: 16px
+
+    .card__header-content
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      .card__title
+        font-size: 20px
+        line-height: 28px
+
+      .card__subtitle
+        font-size: 14px
+        line-height: 20px
+        color: #6E6E6E
+
+  .card__body
+    flex: 1
+    font-size: 16px
+    line-height: 20px
+    &.has-footer
+      border-bottom: 1px solid lightgrey
+
+  .card__footer
+    color: #6E6E6E
+    font-size: 14px
+    line-height: 20px
+
+  .card__header + .card__body
+    padding-top: 0
+
+  &:hover
+    transition: background-color 0.15s ease-in-out
+    background-color: #2D2D2D0A

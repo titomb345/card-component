@@ -1,2 +1,0 @@
-# card-component
-Card Component
