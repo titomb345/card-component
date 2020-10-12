@@ -14,6 +14,7 @@ const Card = props => {
     body,
     footer,
     cover,
+    coverFull,
     coverUnderTitle = false
   } = props;
   let [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,9 @@ const Card = props => {
     }, LOADING_TIME);
   });
 
-  const coverPhotoElement = cover && <CoverPhoto cover={cover} />;
+  const coverPhotoElement = cover && (
+    <CoverPhoto cover={cover} coverFull={coverFull} />
+  );
   const showHeader = !!(subtitle || title || thumbnail);
 
   if (isLoading) {
@@ -32,7 +35,13 @@ const Card = props => {
   }
 
   return (
-    <div tabIndex={1} className={`card${isLoading ? " loading" : ""}${onClick ? " has-onclick" : ""}`} onClick={onClick}>
+    <div
+      tabIndex={1}
+      className={`card${isLoading ? " loading" : ""}${
+        onClick ? " has-onclick" : ""
+      }`}
+      onClick={onClick}
+    >
       {!coverUnderTitle && coverPhotoElement}
 
       {showHeader && (

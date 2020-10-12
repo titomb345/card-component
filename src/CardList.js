@@ -11,8 +11,8 @@ const CardList = () => {
         {...{
           title: "This Card Has It All!",
           subtitle: "You heard that right!",
-          thumbnail: "https://placekitten.com/g/100/100",
-          cover: "https://placekitten.com/g/400/200"
+          thumbnail: "https://placekitten.com/g/60/60",
+          cover: "https://placekitten.com/g/325/250"
         }}
         footer={
           <a
@@ -28,7 +28,7 @@ const CardList = () => {
           <div>
             This card has:
             <ul>
-              <li>a cover photo</li>
+              <li>a cover photo (200px height)</li>
               <li>a thumbnail</li>
               <li>a title</li>
               <li>a subtitle</li>
@@ -44,15 +44,16 @@ const CardList = () => {
       <Card
         {...{
           title: "This Card Has Less!",
-          cover: "https://placekitten.com/g/700/200",
-          coverUnderTitle: true
+          cover: "https://placekitten.com/g/500/250",
+          coverUnderTitle: true,
+          coverFull: true
         }}
         body={
           <div>
             This card has:
             <ul>
               <li>a title</li>
-              <li>a cover photo under the title</li>
+              <li>a cover photo under the title (variable height)</li>
               <li>a body{showButton ? " with a button" : ""}</li>
             </ul>
             You can click on me to open a webpage!
@@ -73,7 +74,7 @@ const CardList = () => {
       />
 
       <Card
-        thumbnail={"https://placekitten.com/g/100/100"}
+        thumbnail={"https://placekitten.com/g/60/60"}
         body={
           <div>
             This card has:

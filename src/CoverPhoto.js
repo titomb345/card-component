@@ -1,13 +1,10 @@
 import React from "react";
 
-const CoverPhoto = ({ cover }) => {
+const CoverPhoto = ({ cover, coverFull = false }) => {
   return (
-    <div
-      className="card__cover-photo"
-      style={{
-        backgroundImage: `url(${cover})`
-      }}
-    />
+    <div className={`card__cover-photo${coverFull ? " full" : ""}`}>
+      <img src={cover} alt="Cover" />
+    </div>
   );
 };
 

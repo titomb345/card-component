@@ -5,14 +5,15 @@
   border-radius: 8px
   border: 1px solid #2D2D2D33
   color: #2D2D2D
-  display: flex
+  display: inline-flex
   flex-direction: column
-  width: 327px
+  min-width: 327px
 
   a
     color: #2D2D2D
 
   button
+    display: block
     padding: 8px
     color: white
     font-weight: bold
@@ -34,6 +35,9 @@
   .card__cover-photo
     background-position: center
     height: 200px
+    overflow: hidden
+    &.full
+      height: auto
 
   .card__header
     display: flex
