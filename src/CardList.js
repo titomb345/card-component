@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import "./CardsList.sass";
+import "./CardList.sass";
 
 const CardList = () => {
   let [showButton, setShowButton] = useState(true);

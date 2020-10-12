@@ -4,9 +4,9 @@ import CardList from "./CardList";
 
 const App = () => {
   return (
-      <Layout>
-        <CardList/>
-      </Layout>
+    <Layout>
+      <CardList />
+    </Layout>
   );
 };
 

@@ -36,7 +36,7 @@ const Card = props => {
       {!coverUnderTitle && coverPhotoElement}
 
       {showHeader && (
-        <div className="card__header">
+        <header className="card__header">
           {thumbnail && (
             <img alt="Thumbnail" className="card__thumbnail" src={thumbnail} />
           )}
@@ -45,7 +45,7 @@ const Card = props => {
             {title && <h1 className="card__title">{title}</h1>}
             {subtitle && <h2 className="card__subtitle">{subtitle}</h2>}
           </div>
-        </div>
+        </header>
       )}
 
       {coverUnderTitle && coverPhotoElement}
@@ -55,9 +55,9 @@ const Card = props => {
       </div>
 
       {footer && (
-        <div className="card__footer">
+        <footer className="card__footer">
           <div className="card__footer-content">{footer}</div>
-        </div>
+        </footer>
       )}
     </div>
   );
