@@ -6,13 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To install the packages necessary to run this app, please run `yarn install` or `npm install`.
 
-### Building App
+### Launching the App
 
-To build the application, please run `yarn build` or `npm build`.   
-This will create a production build, which can be served using a static server:
+To launch the application in development mode, please run `npm start`.
 
-### Serving App
-Install the static server using: `npm install -g server`  
-Start the server using: `server -s build`
-
-Afterwards, the app should be accessible at: `http://localhost:5000`
+This should open a webpage with the app already running.
